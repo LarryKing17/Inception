@@ -1,0 +1,12 @@
+[mysqld]
+# Dossier où seront stockées les données physiques de la base
+datadir = /var/lib/mysql
+
+# On autorise la communication avec les autres conteneurs du réseau Docker
+bind_address = 0.0.0.0
+
+# Port standard de MariaDB
+port = 3306
+
+# L'utilisateur Linux qui fait tourner le processus
+user = mysql
