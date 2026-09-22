@@ -15,7 +15,7 @@ RUN mkdir -p /etc/ssl/certs /etc/ssl/private && \
     -subj "/C=FR/ST=IDF/L=Paris/O=42/OU=42/CN=inception.42.fr/UID=inception"
 
 # 4. On injecte ton fichier de configuration pour écraser celui par défaut
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY conf/nginx.conf /etc/nginx/nginx.conf
 
 # 5. Création du dossier qui va accueillir les fichiers du site web
 RUN mkdir -p /var/www/wordpress && \
